@@ -1,0 +1,22 @@
+.degrade{
+    margin: 12px;
+    padding: 12px;
+   background-image: linear-gradient(to right, rgb(105, 167, 105), rgb(243, 130, 17), red );
+  
+}
+.croix{
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: end;
+  margin-top: 1.5rem;
+}
+td.text
+{ 
+  margin-right:5px;
+}
+table{
+  border:  solid rgb(91, 89, 89);
+  
+}
+

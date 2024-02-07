@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parametre de compte</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="parametreCompt.css">
+
+
+</head>
+
+<body>
+
+    <div class="grid__left">
+        <div class="sidebar">
+            <!-- Le contentu image -->
+            <div class="item_image">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="list">
+                <!-- Debut de la list 1 -->
+                <div class="item__list1">
+                    <ul class=" ">
+                        <li><a href="dachboard.html"><i class="fa-solid fa-chart-simple"></i><span>Dachboard</span> </a>
+                        </li>
+                        <li><a href="facture.html"><i class="fa-solid fa-peace"></i><span>Facture</span></a></li>
+                        <li><a href="commande.html"><i class="fa-solid fa-cart-shopping"></i><span>Commande</span></a>
+                        </li>
+                        <li><a href="suivi.html"><i class="fa-solid fa-bag-shopping"></i><span><span>Suivi</span></a>
+                        </li>
+                        <li><a href="serviceclient.html"><i class="fa-solid fa-comment-dots"></i><span>Service
+                                    client</span></a></li>
+                    </ul>
+                </div>
+                <!-- Fin de la list 1 -->
+                <!-- Debut de la list 2 -->
+                <div class="item__list2">
+                    <ul class="item__ul1">
+                        <li><a href="parametreCompte.html"><i class="fa-solid fa-gear"></i><span>Paramètres du
+                                    compte</span></a></li>
+                        <li><a href="index.html"><i
+                                    class="fa-solid fa-arrow-right-from-bracket"></i><span>Déconnexion</span></a> </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Fin de la sidebar coté left -->
+    <!-- Début de la navbar coté right -->
+    <div class="grid__right">
+        <div class="navbar">
+           
+              
+            <!-- Debut des image a droite -->
+            <div class="cloche">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                      d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z" />
+                    </svg>
+            </div>
+            <div class="avatar">
+                <img src="Logo/avatar.jpg" alt="Avatar d'utilisateur">
+            </div>
+            <!-- Fin des image a droite -->
+
+        </div>
+        <div class="box__client">
+
+            <!-- modale de modification de compt -->
+            <div id="modal2" class="compt-modal">
+                <div class="modal-content">
+                  <span class="modal-close">&times;</span>
+                  <h2>Modifier le mot de passe</h2>
+                  <form id="formModifierMotDePasse">
+                    <label for="ancienMotDePasse">Ancien mot de passe:</label>
+                    <input type="password" id="ancienMotDePasse" name="ancienMotDePasse"><br>
+                    <label for="nouveauMotDePasse">Nouveau mot de passe:</label>
+                    <input type="password" id="nouveauMotDePasse" name="nouveauMotDePasse"><br>
+                    <label for="confirmationMotDePasse">Confirmer le nouveau mot de passe:</label>
+                    <input type="password" id="confirmationMotDePasse" name="confirmationMotDePasse"><br>
+                    <button type="submit">Modifier</button>
+                  </form>
+                </div>
+              </div>
+
+
+            <!-- debut du box modale de confirmation-->
+            <div class="message">
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Les informations ont été envoyées avec succès!</p>
+                  </div>
+                </div>
+              
+                <div id="div_nav">
+                    <div>
+                        <i class="bi bi-arrow-left-short"></i><span><a href="dachboard.html"></a>Retournez au tableau de
+                            bord</span>
+                    </div>
+                    <div style="display: flex; justify-content: center; align-items: center; justify-content: space-around; gap: 10px;">
+                        <button id="btn_modifier_pwd" style="background-color: rgb(242, 51, 4); color: aliceblue; font-size: 30px; display: flex; border-radius: 5px;">Modifier le mot de pass</button>
+                        <button id="btn_suprimer_compte" style="background-color: #3697ab;; color: aliceblue; font-size: 30px; display: flex; border-radius: 5px ;">Suprimer le compte</button>
+                    </div>
+                </div>
+
+                <div id="container__message ">
+                    <div class="message " style=" display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    justify-content: space-between;">
+                        <div class=" formulaire" style="width: 70%;">
+                            <h3 >Modifier le profil</h3>
+                            <div class="form-floating">
+                                <h3 for="">Nom</h3>
+                                <textarea class="floatingTextarea"  style="font-size: 20px;" id="textarea-nom"></textarea>
+                                <h3 for="">Mail</h3>
+                                <textarea class="floatingTextarea"  style="font-size: 20px;" id="textarea-mail"></textarea>
+                            </div>
+                            <div class="form-floating">
+                                <h3>Bibliographie</h3>
+                                <div class="">
+                                    <textarea class="floatingTextarea2" style="font-size: 20px;" id="textarea-biblio"></textarea>
+                                </div>
+                            </div><br>
+                            <div class=" btn__message">
+                                <button id="envoyer" class="btn btn-primary" type="button">Envoyer</button>
+                            </div>
+                        </div>
+
+                        <div id="avatarSet">
+                            <div class="avatarChange">
+                                <span>Ton avatar</span>
+                                <div class="div_avatar  " style='border-radius: 50%;'>
+                                    <img src="Logo/avatar.jpg" id="img_avatar" alt="">
+                                </div>
+                               
+                            </div>
+                            <div class="bouttonSet"  >
+                                <input type="file" id="file_modifier" style="display: none;">
+                                <button id="btn_modifier"  style="background-color: rgb(242, 51, 4); color: aliceblue; font-size: 30px;  border-radius: 5px; height: 1.5em; width: 10em;  ">Modifier la photo</button>
+                                <button id="btn_suprimer" style="background-color: #3697ab; color: aliceblue; font-size: 30px; border-radius: 5px; margin: auto;  height: 1.5em; width: 10em;">Suprimer la photo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<script src="parmetreCompt.js"></script>
+
+</body>
+
+</html>

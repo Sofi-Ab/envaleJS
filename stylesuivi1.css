@@ -1,0 +1,119 @@
+
+.list-unstyled{
+    padding-right: 1rem;
+}
+#const{
+    padding-right: 0;
+}
+ul li{
+   padding: 10px; 
+   margin-bottom: 5px;
+   border-radius: 7px;
+}
+.comande{
+    border-radius: 20px;
+}
+.carte1{
+background-color: rgb(79, 162, 170); border-radius: 12px;
+}
+.carte2{
+    background-color:white; border-radius: 12px; border: solid 1px rgb(79, 162, 170) ;
+}
+ul li:hover{
+    background-color:rgb(198, 238, 242);
+}
+.act{
+    background-color: rgb(198, 238, 242);
+}
+#btn{
+background-color:rgb(79, 162, 170);
+border: none;
+
+}
+.facture{
+    margin-right: 1rem;
+}
+
+.bordergauche{
+    border-left: none;
+}
+td{
+    color: rgba(24, 25, 26, 0.564);
+    border: solid 1px rgb(155, 147, 147);
+    border-right: none ;
+    border-bottom: none ;
+}
+.text{
+    margin: auto;
+    margin-left: 3px;
+}
+.suivi{
+    font-size: 10px;
+}
+.blogo{
+    height: 60px;
+}
+.contain{
+    border-radius: 20px
+}
+.bg{
+height: 10px; width: 10px;border-radius: 10px; margin-top: 10px; margin-left: -12px; border: 2px solid white;
+}
+#myChart3{
+    padding-top: 2rem;
+    height: 30rem !important;
+    margin-bottom: 5rem;
+}
+.carte{
+    height: 15rem;
+}
+.color
+{
+    background-color: hsl(185, 63%, 86%);
+}
+.rounded-3{
+    height: 40px; width: 90px; background-color: #4FA2AA; border: none
+}
+.nav{
+    height: 10px; width: 10px;border-radius: 10px; margin-top: 10px; margin-left: -12px; border: 2px solid white;
+}
+.degre{
+    position: relative; bottom: 5rem; font-size: x-large; color: aliceblue;
+}
+.goute{
+    background-color: hsl(185, 63%, 86%); border-radius: 50px; height: 2rem; width: 2rem; margin: auto; display: flex; justify-content: center; align-items: center
+}
+.commande{
+height: 10px; width: 10px;border-radius: 10px; margin-top: 10px; margin-left: -12px; border: 2px solid white; 
+}
+@media screen and (max-width: 608px) {
+    .media{
+        justify-content: center;
+        align-items: center;
+        
+        flex-direction: column !important;
+    }
+    .degrade{
+        width: 100%;
+    }
+    .paragraphe{
+        margin-left: 1rem;
+       
+    }
+    .paragraphe2{
+        margin-left: 1rem;
+    }
+    .diagramme{
+        background-color:hsl(185, 63%, 86%) ;
+    }
+    .b{
+       height: 40px !important;
+       width: 40px;
+    }
+}
+@media screen and (max-width: 768) {
+    .act {
+        width: fit-content;
+        padding-right: 30px;
+    }
+}
